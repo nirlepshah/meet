@@ -13,10 +13,11 @@ To build a serverless, progressive web application (PWA) with React using a test
 ○ As a user, I would like to be able to add the app shortcut to my home screen so that I can open the app faster. <br>
 ○ As a user, I would like to be able to see a chart showing the upcoming events in each city so that I know what events are organized in which city <br>
 
-## Scenarios
+## Scenarios:
 
 FEATURE 2: SHOW/HIDE AN EVENT'S DETAILS
-User Story: As a user, I would like to be able to click the show/hide event details button, so that I can see more/less information about a particular event. <br>
+
+User Story: As a user, I would like to be able to click the show/hide event details button, so that I can see more/less information about a particular event.
 
 Scenario 1: An event element card remains collapsed by default
 
@@ -35,6 +36,7 @@ Scenario 3 - User can collapse an event card to hide additional details.
 - Then the event card will be collapsed again
 
 FEATURE 3: SPECIFY THE NUMBER OF EVENTS
+
 User Story: As a user, I would like to be able to enter the number of events that I want to view in the app so that I can manage the number of events to be displayed at a time
 
 Scenario1: When the user hasn’t specified a number, 32 is the default number
@@ -50,6 +52,7 @@ Scenario 2: User can change the number of events they want to see
 - Then that exact number of events will be displayed
 
 FEATURE 4: USE THE APP WHEN OFFLINE
+
 User story: As a user, I would like to be able to navigate the app when offline so that I can retrieve event information that I viewed the last time when I was online.
 Scenario 1: Show cached data when there’s no internet connection
 
