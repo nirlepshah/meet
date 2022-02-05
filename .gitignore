@@ -31,3 +31,5 @@ jspm_packages
 
 # environment variables
 config.json
+
+.env
