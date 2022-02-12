@@ -1,11 +1,15 @@
 import React, { Component } from "react";
+
 class CitySearch extends Component {
     state = {
         query: '',
         suggestions: [],
 
     };
-
+    // handleInputChanged = (event) => {
+    //     const value = event.target.value;
+    //     this.setState({ query: value });
+    // }
     handleInputChanged = (event) => {
         const value = event.target.value;
         const suggestions = this.props.locations.filter((location) => {
@@ -16,7 +20,6 @@ class CitySearch extends Component {
             suggestions,
         });
     };
-
 
     render() {
         return (
