@@ -2,12 +2,13 @@ import React, { Component } from "react";
 
 class Event extends Component {
     state = {
-        collapsed: true
+        event: {},
+        collapsed: true,
     };
 
     handleClick = () => {
         this.setState({
-            collapsed: !this.state.collapsed
+            collapsed: !this.state.collapsed,
         });
     };
 
