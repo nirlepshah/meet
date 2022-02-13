@@ -7,8 +7,9 @@ import { extractLocations } from '../api';
 describe('<CitySearch /> component', () => {
     let locations, CitySearchWrapper;
     beforeAll(() => {
+        //passing function updateEvenets empty function as prop 
         locations = extractLocations(mockData);
-        CitySearchWrapper = shallow(<CitySearch locations={locations} />);
+        CitySearchWrapper = shallow(<CitySearch locations={locations} updateEvents={() => { }} />);
     });
 
     test('render text input', () => {
