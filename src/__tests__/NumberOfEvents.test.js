@@ -8,8 +8,20 @@ describe('<NumberOfEvents /> component', () => {
     beforeAll(() => {
         NumberOfEventsWrapper = shallow(<NumberOfEvents />)
     });
+
     test('render text input', () => {
         expect(NumberOfEventsWrapper.find('.NumberOfEvents')).toHaveLength(1);
+    });
+
+    test('render text box', () => {
+        expect(NumberOfEventsWrapper.find('.number-of-events')).toHaveLength(1);
+    });
+
+    test("render text input correctly from prop", () => {
+        const numberOfEvents = NumberOfEventsWrapper.prop("numberOfEvents");
+        expect(NumberOfEventsWrapper.find(".number-of-events").prop("value")).toBe(
+            numberOfEvents
+        );
     });
 
 })
