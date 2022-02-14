@@ -8,15 +8,13 @@ import { mockData } from './mock-data';
 class App extends Component {
 
   state = {
-
-
     numberOfEvents: 32,
   };
   render() {
     return (
       <div className="App">
         <CitySearch />
-        <NumberOfEvents />
+        <NumberOfEvents numberOfEvents={this.state.numberOfEvents} />
         <EventList events={mockData} />
 
 
