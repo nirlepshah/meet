@@ -36,11 +36,13 @@ class CitySearch extends Component {
                     type="text"
                     className="city"
                     value={this.state.query}
+                    placeholder="Enter city to search"
                     onChange={this.handleInputChanged}
                 />
                 <ul className="suggestions">
                     {this.state.suggestions.map((suggestion) => (
                         <li key={suggestion} onClick={() => this.handleItemClicked(suggestion)}>{suggestion}</li>
+
                     ))}
                     <li onClick={() => this.handleItemClicked("all")}>
                         <b>See all cities</b>
