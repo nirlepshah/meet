@@ -24,7 +24,9 @@ Scenario 1: An event element card remains collapsed by default
 - Given the user has not clicked the toggle button
 - When the user is on the main page
 - Then the event element card will remain in the collapsed state
-  Scenario 2: User can expand an event card to see additional details
+
+Scenario 2: User can expand an event card to see additional details
+
 - Given the user wanted to see more details about an event
 - when the user clicks on the toggle button
 - Then the event card will be expanded to display additional details
