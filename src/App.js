@@ -13,6 +13,7 @@ class App extends Component {
     locations: [], // create "locations" state
     numberOfEvents: 32,
     currentLocation: 'all',
+    errorText: '',
   }
 
   componentDidMount() {
@@ -42,27 +43,18 @@ class App extends Component {
       });
     });
   }
-  // updateEvents = async (numberOfEvents) => {
-  //   getEvents().then(events => {
 
-  //     if (this.mounted) {
-  //       this.setState({
-  //         events: events.slice(0, this.state.numberOfEvents),
-
-  //       });
-  //     }
-  //   });
-  // };
 
   updateNumberOfEvents = async e => {
     const newNumber = e.target.value ? parseInt(e.target.value) : 32;
     if (newNumber < 1 || newNumber > 32) {
       return this.setState({
+        errorText: 'Please choose a number between 1 and 32.',
         numberOfEvents: 0,
       });
     } else {
       this.setState({
-
+        errorText: '',
         numberOfEvents: newNumber,
       });
       this.updateEvents(this.state.currentLocation, this.state.numberOfEvents);
@@ -75,9 +67,7 @@ class App extends Component {
 
 
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
-        <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} />
-
-
+        <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} errorText={this.state.errorText} />
         <EventList events={this.state.events} />
 
       </div>
