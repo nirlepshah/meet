@@ -41,22 +41,17 @@ class App extends Component {
 
   // componentDidMount() {
   //   this.mounted = true;
-  //   const accessToken = localStorage.getItem('access_token');
-  //   const isTokenValid = (await checkToken(accessToken)).error ? false : true;
-  //   const searchParams = new URLSearchParams(window.location.search);
-  //   const code = searchParams.get('code');
-  //   this.setState({ showWelcomeScreen: !(code || isTokenValid) });
-  //   if ((code || isTokenValid) && this.mounted) {
-  //     getEvents().then((events) => {
-  //       if (this.mounted) {
-  //         this.setState({
-  //           events: events.slice(0, this.state.numberOfEvents),
-  //           locations: extractLocations(events),
-  //         });
-  //       }
-  //     });
-  //   }
+
+  //   getEvents().then((events) => {
+  //     if (this.mounted) {
+  //       this.setState({
+  //         events: events.slice(0, this.state.numberOfEvents),
+  //         locations: extractLocations(events),
+  //       });
+  //     }
+  //   });
   // }
+
   componentWillUnmount() {
     this.mounted = false;
   }
@@ -92,8 +87,8 @@ class App extends Component {
   };
 
   render() {
-    if (this.state.showWelcomeScreen === undefined)
-      return <div className="App" />;
+    // if (this.state.showWelcomeScreen === undefined)
+    // return <div className="App" />;
     return (
       <div className="App">
 
@@ -101,8 +96,8 @@ class App extends Component {
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
         <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} errorText={this.state.errorText} />
         <EventList events={this.state.events} />
-        <WelcomeScreen showWelcomeScreen={this.state.showWelcomeScreen}
-          getAccessToken={() => { getAccessToken() }} />
+        {/* <WelcomeScreen showWelcomeScreen={this.state.showWelcomeScreen}
+          getAccessToken={() => { getAccessToken() }} /> */}
       </div>
     );
   }
