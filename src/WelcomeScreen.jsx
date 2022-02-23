@@ -29,7 +29,7 @@ function WelcomeScreen(props) {
         </div>
       </div>
       <a
-        href="https://nirlepshah.github.io.io/meet/privacy.html"
+        href="https://nirlepshah.github.io./meet/privacy.html"
         rel="nofollow noopener"
       >
         Privacy policy
