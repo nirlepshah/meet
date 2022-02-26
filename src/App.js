@@ -7,7 +7,7 @@ import WelcomeScreen from './WelcomeScreen';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import './App.css'
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import EventGenre from './EventGenre';
+import { EventGenre } from './EventGenre';
 
 class App extends Component {
   state = {
@@ -107,12 +107,10 @@ class App extends Component {
       <div className="App">
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
         <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateNumberOfEvents={this.updateNumberOfEvents} errorText={this.state.errorText} />
-        <h4>Events in each city</h4>
         <div className="data-vis-wrapper">
           <EventGenre events={this.state.events} />
           <ResponsiveContainer height={400} >
             <ScatterChart
-
               margin={{
                 top: 20, right: 20, bottom: 20, left: 20,
               }}
