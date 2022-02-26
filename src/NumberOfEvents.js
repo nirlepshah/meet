@@ -8,7 +8,6 @@ class NumberOfEvents extends Component {
     render() {
         return (
             <div className="NumberOfEvents">
-
                 <p>Number of events to show:</p>
                 <input type="number"
                     value={this.props.numberOfEvents}
