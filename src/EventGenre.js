@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
-
+import './EventGenre.css'
 export const EventGenre = ({ events }) => {
 
     const [data, setData] = useState([]);
