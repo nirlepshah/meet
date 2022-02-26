@@ -10,13 +10,10 @@ describe('<EventList /> component', () => {
     });
 
     test('Render event', () => {
-
         expect(EventWrapper.find('.event')).toHaveLength(1);
     });
 
-
     test('Render summary', () => {
-        console.log(mockData[1].summary)
         expect(EventWrapper.find('.summary')).toHaveLength(1);
     });
 
