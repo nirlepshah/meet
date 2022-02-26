@@ -4,10 +4,15 @@ import "./WelcomeScreen.css";
 function WelcomeScreen(props) {
   return props.showWelcomeScreen ? (
     <div className="WelcomeScreen">
-      <h1>Welcome to the Meet app</h1>
-      <h4>
-        Log in to see upcoming events around the world for full-stack developers
-      </h4>
+      <div className="WelcomeMessage">
+        <h1>Welcome to the Meet app</h1>
+      </div>
+      <div className="LogInScreen">
+        <h3>
+          Log in to see upcoming events around the world for full-stack
+          developers
+        </h3>
+      </div>
       <div className="button_cont" align="center">
         <div class="google-btn">
           <div class="google-icon-wrapper">
@@ -28,12 +33,14 @@ function WelcomeScreen(props) {
           </button>
         </div>
       </div>
-      <a
-        href="https://nirlepshah.github.io/meet/privacy.html"
-        rel="nofollow noopener"
-      >
-        Privacy policy
-      </a>
+      <div className="PrivacyText">
+        <a
+          href="https://nirlepshah.github.io/meet/privacy.html"
+          rel="nofollow noopener"
+        >
+          Privacy policy
+        </a>
+      </div>
     </div>
   ) : null;
 }
