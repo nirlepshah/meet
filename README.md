@@ -4,22 +4,22 @@
 
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
 
-## Click here for the Project Link
+## Project Link
 
 - **[Click here](https://nirlepshah.github.io/meet/)**
 
 ## App dependencies
 
-○ gh-pages
-○ googleapis
-○ enzyme
-○ aws lambda
-○ @testing-library/react
-@ wojtekmaj/enzyme-adapter-react-17
-○ jest-cucumber
-○ axios
-○ Puppeteer
-○ recharts library
+○ gh-pages <br>
+○ googleapis <br>
+○ enzyme <br>
+○ aws lambda <br>
+○ @testing-library/react <br>
+@ wojtekmaj/enzyme-adapter-react-17 <br>
+○ jest-cucumber <br>
+○ axios <br>
+○ Puppeteer <br>
+○ recharts library <br>
 
 ## User Stories:
 
