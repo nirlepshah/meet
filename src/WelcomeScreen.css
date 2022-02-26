@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    
+}
+.PrivacyText{
+        margin-top: 1rem;
+        font-size: large;
+        font-size: 15pt;
+        font-weight: bold;
+        
+}
+a{
+    color:    #ccff33
+
 }
 .WelcomeScreen {
     
@@ -9,9 +22,25 @@ html, body {
     width: 100%;
     height: 100%;
     top: 0;
-    background: #ffe6e6;
+    /* background: #ffe6e6; */
+    background-image: url("../public/background1.jpg");
     
        
+    }
+    .WelcomeMessage{
+        color:  #ff0066;
+        margin-top: 5rem;
+        font-size: 3rem;
+        font-style: italic;
+        font-family: cursive;
+       
+    }
+  
+    .LogInScreen{
+        margin-top: 5rem;
+        color: #660066;
+        font-style: italic;
+        font-size: 2.5rem;
     }
     .login-button {
     color: #494949;
@@ -23,14 +52,16 @@ html, body {
     transition: all 0.4s ease 0s;
     min-width: 10rem;
     margin: 1rem;
-    }
+     }
+   
     .google-btn {
-    width: 184px;
-    height: 42px;
-    margin: 1rem;
+    width: 210px;
+    height: 55px;
+    margin-top: 4rem;
     background-color: #4285f4;
     border-radius: 2px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    
     }
     .google-btn:hover {
     box-shadow: 0 0 6px #4285f4;
@@ -42,8 +73,8 @@ html, body {
         position: absolute;
         margin-top: 1px;
         margin-left: 1px;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         border-radius: 2px;
         background-color: #fff;
         }
@@ -57,12 +88,13 @@ html, body {
         .btn-text {
         float: right;
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.2px;
         font-family: "Roboto";
         background-color: #4285f4;
         width: 80%;
         height: 100%;
         text-align: center;
+        padding-left: 10.5px;
         }
-        
+       
