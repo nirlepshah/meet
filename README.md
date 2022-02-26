@@ -15,7 +15,7 @@ To build a serverless, progressive web application (PWA) with React using a test
 ○ enzyme <br>
 ○ aws lambda <br>
 ○ @testing-library/react <br>
-@ wojtekmaj/enzyme-adapter-react-17 <br>
+○ @ wojtekmaj/enzyme-adapter-react-17 <br>
 ○ jest-cucumber <br>
 ○ axios <br>
 ○ Puppeteer <br>
