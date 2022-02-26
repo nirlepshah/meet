@@ -4,6 +4,23 @@
 
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
 
+## Click here for the Project Link
+
+- **[Click here](https://nirlepshah.github.io/meet/)**
+
+## App dependencies
+
+○ gh-pages
+○ googleapis
+○ enzyme
+○ aws lambda
+○ @testing-library/react
+@ wojtekmaj/enzyme-adapter-react-17
+○ jest-cucumber
+○ axios
+○ Puppeteer
+○ recharts library
+
 ## User Stories:
 
 ○ As a user, I would like to be able to filter events by city so that I can see the list of events that take place in that city. <br>
