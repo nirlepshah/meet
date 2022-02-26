@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, ResponsiveContainer, Cell } from 'recharts';
-import './EventGenre.css'
 
 export const EventGenre = ({ events }) => {
 
@@ -17,18 +16,15 @@ export const EventGenre = ({ events }) => {
 
     useEffect(() => { setData(() => getData()); }, [events]);
 
-
-
     return (
-
         <ResponsiveContainer className="container" height={400} >
             <PieChart width={400} height={400}>
                 <Pie
                     data={data}
-                    cx={900}
-                    cy={150}
+                    cx={200}
+                    cy={200}
                     labelLine={false}
-                    outerRadius={80}
+                    outerRadius={100}
                     fill="#1D4355"
                     dataKey="value"
                     label={({ name, percent }) => (name !== 0 && percent !== 0) ? `${name}  ${(percent * 100).toFixed(0)}%` : ``}
@@ -36,6 +32,5 @@ export const EventGenre = ({ events }) => {
                 </Pie>
             </PieChart>
         </ResponsiveContainer>
-
     );
 }
